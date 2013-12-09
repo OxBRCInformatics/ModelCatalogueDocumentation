@@ -7,40 +7,45 @@ docpadConfig =
   # These are variables that will be accessible via our templates
   # To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
 
+  plugins:
+      ghpages:
+          deployRemote: 'target'
+          deployBranch: 'gh-pages'
+
   templateData:
 
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://website.com"
+      url: "http://localhost:9778/"
 
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
-        'www.website.com',
-        'website.herokuapp.com'
+#        'www.website.com',
+#        'website.herokuapp.com'
       ]
 
       # The default title of our website
-      title: "Your Website"
+      title: "Mode Catalogue Documentation"
 
       # The website description (for SEO)
-      description: """
-        When your website appears in search results in say Google, the text here will be shown underneath your website's title.
-        """
+#      description: """
+#        When your website appears in search results in say Google, the text here will be shown underneath your website's #title.
+#        """
 
       # The website keywords (for SEO) separated by commas
-      keywords: """
-        place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
-        """
+#      keywords: """
+#        place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+#        """
 
       # The website author's name
-      author: "Your Name"
+      author: "James Welch"
 
       # The website author's email
-      email: "your@email.com"
+      email: "james.welch@cs.ox.ac.uk"
 
       # Your company's name
-      copyright: "© Your Company 2012"
+      copyright: "© Oxford BRC Clinical Informatics 2013"
 
 
     # Helper Functions
