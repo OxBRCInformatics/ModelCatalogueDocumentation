@@ -17,8 +17,9 @@ docpadConfig =
     # Specify some site properties
     site:
       # The production url of our website
-      # url: "http://localhost:9778/"
-        url: "http://amilward.github.io/MDR/"
+      url: "http://localhost:9778"
+      # url: "http://amilward.github.io/MDR"
+      
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
 #        'www.website.com',
@@ -26,7 +27,7 @@ docpadConfig =
       ]
 
       # The default title of our website
-      title: "Mode Catalogue Documentation"
+      title: "Model Catalogue Documentation"
 
       # The website description (for SEO)
 #      description: """
@@ -83,8 +84,16 @@ docpadConfig =
       database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
 
     # This one, will fetch in all documents that will be outputted to the posts directory
-    posts: (database) ->
-      database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
+    technical: (database) ->
+      database.findAllLive({relativeOutDirPath:'technical'},[date:-1])
+
+    # This one, will fetch in all documents that will be outputted to the posts directory
+    user: (database) ->
+      database.findAllLive({relativeOutDirPath:'user'})
+
+    # This one, will fetch in all documents that will be outputted to the posts directory
+    meta: (database) ->
+      database.findAllLive({relativeOutDirPath:'meta'},[date:-1])
 
 
   # DocPad Events

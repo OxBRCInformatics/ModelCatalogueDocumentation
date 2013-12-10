@@ -1,0 +1,11 @@
+---
+title: User Guide
+layout: page
+tags: ['documentation','user', 'guide']
+pageOrder: 1
+---
+
+nav.linklist
+  each doc in getCollection('user').toJSON()
+    li
+      a(href=site.url + doc.url)= doc.title

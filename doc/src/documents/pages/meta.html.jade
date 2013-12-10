@@ -1,0 +1,11 @@
+---
+title: Meta-documentation
+layout: page
+tags: ['documentation','page']
+pageOrder: 3
+---
+
+nav.linklist
+  each doc in getCollection('meta').toJSON()
+    li
+      a(href=doc.url)= doc.title

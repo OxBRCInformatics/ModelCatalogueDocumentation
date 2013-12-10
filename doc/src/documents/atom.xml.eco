@@ -10,7 +10,7 @@
     <email><%= @site.email %></email>
   </author>
 
-  <% for document in @getCollection('posts').toJSON(): %>
+ <!-- <% for document in @getCollection('user').toJSON(): %>
     <entry>
       <title><%= document.title %></title>
       <link href="<%= @site.url+'/'+document.url %>"/>
@@ -18,5 +18,5 @@
       <id><%= @site.url+'/'+document.url %></id>
       <content type="html"><%= document.contentRendered %></content>
     </entry>
-  <% end %>
+  <% end %> -->
 </feed>
