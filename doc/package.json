@@ -41,7 +41,8 @@
     "docpad-plugin-jade": "2.x",
     "docpad-plugin-related": "2.x",
     "marked": "*",
-    "docpad-plugin-ghpages": "~2.4.0"
+    "docpad-plugin-ghpages": "~2.4.0",
+    "docpad-plugin-highlightjs": "~2.1.8"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x"
