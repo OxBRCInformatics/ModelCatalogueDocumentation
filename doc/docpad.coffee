@@ -17,8 +17,8 @@ docpadConfig =
     # Specify some site properties
     site:
       # The production url of our website
-      url: "http://localhost:9778"
-      # url: "http://amilward.github.io/MDR"
+      # url: "http://localhost:9778"
+       url: "http://amilward.github.io/MDR"
       
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
