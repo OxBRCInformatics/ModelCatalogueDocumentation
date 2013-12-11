@@ -6,6 +6,14 @@ pageOrder: 1
 ---
 The contents of this docpad are published at http://amilward.github.io/MDR/.
 
+To start with, if you don't have NodeJS installed, install it! On OSX you can do this with Homebrew...
+
+Then you'll need docpad (don't do the following as sudo):
+
+```bash
+npm install -g npm; npm install -g docpad@6.57
+```
+
 To get up and running with a local instance, try this:
 
 ```bash
