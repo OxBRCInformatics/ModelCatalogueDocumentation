@@ -1,5 +1,5 @@
 ---
-title: Creating a new Pathway
+title: Running Grails tests in Eclipse
 layout: page
 tags: ['intro','post']
 ---
@@ -8,7 +8,6 @@ p When running tests you may have a problem with a Xerces class not being loaded
 
 p A workaround is to use the following incantation when running grails test-app
 
-```
-test-app -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl 
-```
+pre test-app -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl 
+
 

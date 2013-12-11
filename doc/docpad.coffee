@@ -85,7 +85,7 @@ docpadConfig =
 
     # This one, will fetch in all documents that will be outputted to the posts directory
     technical: (database) ->
-      database.findAllLive({relativeOutDirPath:'technical'},[date:-1])
+      database.findAllLive({relativeOutDirPath:'technical'})
 
     # This one, will fetch in all documents that will be outputted to the posts directory
     user: (database) ->
@@ -93,7 +93,7 @@ docpadConfig =
 
     # This one, will fetch in all documents that will be outputted to the posts directory
     meta: (database) ->
-      database.findAllLive({relativeOutDirPath:'meta'},[date:-1])
+      database.findAllLive({relativeOutDirPath:'meta'})
 
 
   # DocPad Events
